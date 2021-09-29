@@ -1,0 +1,5 @@
+{{ form_start(form, {"attr":{"novalidate":"novalidate"}}) }}
+    {{ form_widget(form) }}
+    <button class="btn btn-{{ button_color|default('success') }}">{{ button_label|default('Save') }}</button>
+    <a class="btn btn-secondary" href="{{ path('article_index') }}">Cancel</a>
+{{ form_end(form) }}
